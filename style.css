@@ -1002,3 +1002,13 @@ footer .footer-sub { font-size: 0.75rem; margin-top: 0.3rem; }
   width: auto;
   display: block;
 }
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
