@@ -2,7 +2,7 @@
    MOKSHITH NARAYAN — PORTFOLIO JS
 ═══════════════════════════════════════ */
 
-// NAV: scroll shadow + active link
+// NAV: scroll shadow + active link highlight
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
 const sections = document.querySelectorAll('section[id]');
@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
   });
   navLinks.forEach(link => {
     link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
 });
 
@@ -24,9 +24,7 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const navLinksEl = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinksEl.classList.toggle('open');
-});
+hamburger.addEventListener('click', () => navLinksEl.classList.toggle('open'));
 navLinksEl.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => navLinksEl.classList.remove('open'));
 });
@@ -71,16 +69,16 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// SCROLL ANIMATIONS
+// SCROLL ANIMATIONS (IntersectionObserver)
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const delay = entry.target.dataset.delay || 0;
+      const delay = parseInt(entry.target.dataset.delay) || 0;
       setTimeout(() => entry.target.classList.add('visible'), delay);
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
 document.querySelectorAll('.project-card').forEach((el, i) => {
   el.dataset.delay = i * 80;
@@ -99,13 +97,13 @@ document.querySelectorAll('.skill-group').forEach((el, i) => {
   observer.observe(el);
 });
 
-// CONTACT FORM — FORMSPREE
+// CONTACT FORM (Formspree)
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 const submitBtn = document.getElementById('submit-btn');
 
 if (form) {
-  form.addEventListener('submit', async function(e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     submitBtn.textContent = 'Sending...';
@@ -120,15 +118,14 @@ if (form) {
       });
 
       if (response.ok) {
-        formStatus.textContent = '✅ Message sent successfully!';
+        formStatus.textContent = 'Message sent! I will get back to you soon.';
         formStatus.style.color = '#15803d';
         form.reset();
       } else {
-        throw new Error();
+        throw new Error('Server error');
       }
-
-    } catch (error) {
-      formStatus.textContent = '❌ Something went wrong. Try again later.';
+    } catch (err) {
+      formStatus.textContent = 'Something went wrong. Email me at mokshithnarayan09@gmail.com';
       formStatus.style.color = '#b91c1c';
     }
 
@@ -137,24 +134,7 @@ if (form) {
   });
 }
 
-      if (res.ok) {
-        formStatus.textContent = 'Message sent! I\'ll get back to you soon.';
-        formStatus.style.color = '#15803d';
-        form.reset();
-      } else {
-        throw new Error();
-      }
-    } catch {
-      formStatus.textContent = 'Something went wrong. Email me directly at mokshithnarayan09@gmail.com';
-      formStatus.style.color = '#b45309';
-    }
-
-    btn.textContent = 'Send Message →';
-    btn.disabled = false;
-  });
-}
-
-// SMOOTH SCROLL
+// SMOOTH SCROLL for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     const target = document.querySelector(link.getAttribute('href'));
