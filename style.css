@@ -991,3 +991,9 @@ footer .footer-sub { font-size: 0.75rem; margin-top: 0.3rem; }
   .about-cards { grid-template-columns: 1fr; }
   .modal-box { padding: 1.5rem; }
 }
+/* CONTACT FORM STATUS */
+.form-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
