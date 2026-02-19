@@ -501,7 +501,7 @@ section { padding: 100px 0; }
   color: var(--text-1);
   transition: all var(--transition);
   flex: 1;
-  min-width: 190px;
+  min-width: 260px;
 }
 .contact-link:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-2px); color: var(--text-1); }
 .cl-icon { font-size: 1.4rem; }
