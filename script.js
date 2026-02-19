@@ -99,14 +99,7 @@ document.querySelectorAll('.skill-group').forEach((el, i) => {
   observer.observe(el);
 });
 
-// CONTACT FORM
-// ─────────────────────────────────────────────────────────────
-// SETUP (one time, free):
-// 1. Go to https://formspree.io and sign up
-// 2. Click "New Form", set email to: mokshithnarayan09@gmail.com
-// 3. Copy the form ID they give you (e.g. xabcdefg)
-// 4. Replace YOUR_FORM_ID below with that ID
-// ─────────────────────────────────────────────────────────────
+//CONTACT
 const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID';
 
 const form = document.getElementById('contact-form');
