@@ -99,26 +99,43 @@ document.querySelectorAll('.skill-group').forEach((el, i) => {
   observer.observe(el);
 });
 
-//CONTACT
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID';
-
+// CONTACT FORM — FORMSPREE
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
+const submitBtn = document.getElementById('submit-btn');
 
 if (form) {
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
+
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
     formStatus.textContent = '';
 
     try {
-      const res = await fetch(FORMSPREE_URL, {
+      const response = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
+
+      if (response.ok) {
+        formStatus.textContent = '✅ Message sent successfully!';
+        formStatus.style.color = '#15803d';
+        form.reset();
+      } else {
+        throw new Error();
+      }
+
+    } catch (error) {
+      formStatus.textContent = '❌ Something went wrong. Try again later.';
+      formStatus.style.color = '#b91c1c';
+    }
+
+    submitBtn.textContent = 'Send Message →';
+    submitBtn.disabled = false;
+  });
+}
 
       if (res.ok) {
         formStatus.textContent = 'Message sent! I\'ll get back to you soon.';
