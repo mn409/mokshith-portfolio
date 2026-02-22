@@ -295,8 +295,7 @@ section { padding: 100px 0; }
 .timeline-item {
   position: relative;
   margin-bottom: 3.5rem;
-  opacity: 0;
-  transform: translateX(-20px);
+  opacity: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .timeline-item.visible { opacity: 1; transform: translateX(0); }
