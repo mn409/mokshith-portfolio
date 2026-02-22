@@ -33,9 +33,9 @@ navLinksEl.querySelectorAll('a').forEach(a => {
 const modalOverlays = document.querySelectorAll('.modal-overlay');
 
 document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') return;
-    const modal = document.getElementById(card.getAttribute('data-modal'));
+  card.addEventListener('click', () => {
+    const modalId = card.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -45,7 +45,8 @@ document.querySelectorAll('.project-card').forEach(card => {
 
 document.querySelectorAll('.modal-close').forEach(btn => {
   btn.addEventListener('click', () => {
-    const modal = document.getElementById(btn.getAttribute('data-close'));
+    const modalId = btn.getAttribute('data-close');
+    const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.remove('open');
       document.body.style.overflow = '';
@@ -134,7 +135,7 @@ if (form) {
   });
 }
 
-// SMOOTH SCROLL for all anchor links
+// SMOOTH SCROLL for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     const target = document.querySelector(link.getAttribute('href'));
