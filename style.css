@@ -343,8 +343,7 @@ section { padding: 100px 0; }
   transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
 }
 .project-card.visible { opacity: 1; transform: translateY(0); }
 .project-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); border-color: var(--accent); }
@@ -442,8 +441,7 @@ section { padding: 100px 0; }
   transition: box-shadow var(--transition), transform var(--transition);
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  transform: translateY(16px);
+  opacity: 1;
 }
 .achievement-card.visible { opacity: 1; transform: translateY(0); }
 .achievement-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
@@ -470,8 +468,7 @@ section { padding: 100px 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
-  opacity: 0;
-  transform: translateY(16px);
+  opacity: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .skill-group.visible { opacity: 1; transform: translateY(0); }
@@ -482,22 +479,22 @@ section { padding: 100px 0; }
 .skill-tags span { font-size: 0.78rem; padding: 0.35rem 0.75rem; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 100px; color: var(--text-2); font-weight: 500; transition: all var(--transition); cursor: default; }
 .skill-tags span:hover { background: var(--accent-soft); border-color: var(--accent-mid); color: var(--accent); }
 
-/* CONTACT SECTION UPDATED */
+/* CONTACT */
 #contact { background: var(--bg); }
 
 .contact-sub { font-size: 1.05rem; color: var(--text-2); max-width: 600px; line-height: 1.7; margin-bottom: 2.5rem; }
 
-.contact-links { 
-  display: flex; 
+.contact-links {
+  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; 
-  gap: 15px; 
+  flex-wrap: nowrap;
+  gap: 15px;
   margin-bottom: 3.5rem;
-  overflow-x: auto; 
-  padding: 15px 5px; 
-  scrollbar-width: none; /* Hide for Firefox */
+  overflow-x: auto;
+  padding: 15px 5px;
+  scrollbar-width: none;
 }
-.contact-links::-webkit-scrollbar { display: none; } /* Hide for Chrome/Safari */
+.contact-links::-webkit-scrollbar { display: none; }
 
 .contact-link {
   display: flex;
@@ -511,10 +508,9 @@ section { padding: 100px 0; }
   padding: 25px 15px;
   color: var(--text-1);
   transition: all var(--transition);
-  flex: 0 0 140px; 
-  min-width: 140px; 
+  flex: 0 0 140px;
+  min-width: 140px;
 }
-
 .contact-link:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-5px); color: var(--accent); }
 .cl-icon { font-size: 2rem; margin-bottom: 10px; }
 .contact-link strong { display: block; font-size: 0.9rem; color: var(--text-1); font-weight: 600; }
