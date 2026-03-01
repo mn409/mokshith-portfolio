@@ -109,7 +109,7 @@
             <span class="info-icon">✉️</span>
             <div>
               <strong>Email</strong>
-              <p><a href="#" onclick="window.location='mai'+'lto:mokshithnarayan09@gmail.com';return false;">mokshithnarayan09@gmail.com</a></p>
+              <p><a href="#" onclick="window.location='mai'+'lto:mokshithnarayan09@gmail.com';return false;"><span class="__cf_email__" data-cfemail="197476726a71706d7177786b786078772920597e74787075377a7674">[email&#160;protected]</span></a></p>
             </div>
           </div>
           <div class="info-card">
@@ -183,6 +183,19 @@
       <p class="section-sub">Click any card to explore the full case study.</p>
       <div class="projects-grid">
 
+        <div class="project-card" data-modal="modal-p0">
+          <div class="card-top">
+            <span class="card-emoji">🌿</span>
+            <span class="card-type">AI · Consumer Product · Full-Stack</span>
+          </div>
+          <h3>CleanLabel AI</h3>
+          <p>Scan any food label photo and instantly get a Glow Score (A–D), red flag additives flagged, and AI-suggested cleaner swaps.</p>
+          <div class="card-tags">
+            <span>Gemini AI</span><span>Next.js</span><span>Supabase</span><span>TypeScript</span>
+          </div>
+          <span class="card-cta">Read More →</span>
+        </div>
+
         <div class="project-card" data-modal="modal-p1">
           <div class="card-top">
             <span class="card-emoji">🚚</span>
@@ -253,6 +266,36 @@
   </section>
 
   <!-- MODALS -->
+  <div class="modal-overlay" id="modal-p0">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-p0">✕</button>
+      <div class="modal-header">
+        <span class="modal-emoji">🌿</span>
+        <p class="modal-type">AI · Consumer Product · Full-Stack</p>
+        <h2>CleanLabel AI — Decode What's Really in Your Food</h2>
+      </div>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>Food labels are technically honest but practically unreadable. Most consumers have no idea what half the ingredients mean — and brands rely on that gap. There was no fast, accessible way to know if what you're eating is actually clean.</p>
+        <h4>What I Built</h4>
+        <p>A full-stack AI app where you photograph any food label and get an instant <strong>Glow Score (A–D)</strong> — a cleanliness rating with flagged additives called out by name and a smarter swap suggested by the AI. Scan history is saved so you can track products over time.</p>
+        <h4>Outcomes</h4>
+        <ul>
+          <li>Went from idea to deployed product — built, shipped, and live on Vercel</li>
+          <li>Designed the Glow Score system as a product feature, not just a technical output</li>
+          <li>Integrated <strong>Gemini 1.5 Flash</strong> for real multimodal label reading via image upload</li>
+          <li>Built scan persistence with <strong>Supabase</strong> — users can revisit past results</li>
+        </ul>
+        <div class="modal-tags">
+          <span>Gemini AI</span><span>Next.js 14</span><span>TypeScript</span><span>Supabase</span><span>Framer Motion</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/mn409/cleanlabel-ai-app" target="_blank" class="modal-btn-primary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-overlay" id="modal-p1">
     <div class="modal-box">
       <button class="modal-close" data-close="modal-p1">✕</button>
@@ -567,7 +610,7 @@
   </footer>
 
   <!-- ALL JS INLINE — guaranteed to work regardless of caching -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // NAV
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
@@ -680,14 +723,4 @@
     // SMOOTH SCROLL
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', function(e) {
-        var target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
+        var target = document.querySelector(this.ge
