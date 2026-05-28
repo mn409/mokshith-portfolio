@@ -56,7 +56,7 @@
       </div>
       <div class="hero-photo">
         <div class="photo-frame">
-          <img src="profile-photo.png" alt="Mokshith Narayan"/>
+          <img src="profile-photo.png" alt="Mokshith Narayan" onerror="this.style.display='none'"/>
           <div class="photo-backdrop"></div>
         </div>
       </div>
@@ -78,17 +78,11 @@
         <div class="about-cards">
           <div class="info-card">
             <span class="info-icon">📍</span>
-            <div>
-              <strong>Location</strong>
-              <p>Bengaluru, India · Open to any work model</p>
-            </div>
+            <div><strong>Location</strong><p>Bengaluru, India · Open to any work model</p></div>
           </div>
           <div class="info-card">
             <span class="info-icon">🏢</span>
-            <div>
-              <strong>Recent Experience</strong>
-              <p>Packaged App Dev Associate at Accenture</p>
-            </div>
+            <div><strong>Recent Experience</strong><p>Packaged App Dev Associate at Accenture</p></div>
           </div>
           <div class="info-card">
             <span class="info-icon">🎯</span>
@@ -100,24 +94,18 @@
           </div>
           <div class="info-card">
             <span class="info-icon">🎓</span>
-            <div>
-              <strong>Education</strong>
-              <p>BCA · SDM College of Business Management · 2024</p>
-            </div>
+            <div><strong>Education</strong><p>BCA · SDM College of Business Management · 2024</p></div>
           </div>
           <div class="info-card">
             <span class="info-icon">✉️</span>
             <div>
               <strong>Email</strong>
-              <p><a href="#" onclick="window.location='mai'+'lto:mokshithnarayan09@gmail.com';return false;"><span class="__cf_email__" data-cfemail="197476726a71706d7177786b786078772920597e74787075377a7674">[email&#160;protected]</span></a></p>
+              <p><a href="#" onclick="window.location='mai'+'lto:mokshithnarayan09@gmail.com';return false;">mokshithnarayan09@gmail.com</a></p>
             </div>
           </div>
           <div class="info-card">
             <span class="info-icon">💼</span>
-            <div>
-              <strong>LinkedIn</strong>
-              <p><a href="https://www.linkedin.com/in/mokshith-narayan-a4b872255/" target="_blank">mokshith-narayan</a></p>
-            </div>
+            <div><strong>LinkedIn</strong><p><a href="https://www.linkedin.com/in/mokshith-narayan-a4b872255/" target="_blank">mokshith-narayan</a></p></div>
           </div>
         </div>
       </div>
@@ -130,7 +118,6 @@
       <p class="section-label">Experience</p>
       <h2 class="section-title">Where I've made impact</h2>
       <div class="timeline">
-
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
@@ -148,14 +135,10 @@
               <li>Collaborated within a <strong>team of 10</strong> to troubleshoot production issues and streamline cross-functional handovers in a high-stakes environment.</li>
             </ul>
             <div class="timeline-tags">
-              <span>CA Workload Automation</span>
-              <span>Data Pipelines</span>
-              <span>Enterprise Ops</span>
-              <span>Cross-functional Delivery</span>
+              <span>CA Workload Automation</span><span>Data Pipelines</span><span>Enterprise Ops</span><span>Cross-functional Delivery</span>
             </div>
           </div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-dot edu-dot"></div>
           <div class="timeline-content">
@@ -170,7 +153,6 @@
             <p class="timeline-sub">Specialization: Computer Applications &amp; Business Systems</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -183,80 +165,86 @@
       <p class="section-sub">Click any card to explore the full case study.</p>
       <div class="projects-grid">
 
-        <div class="project-card" data-modal="modal-p0" onclick="document.getElementById('modal-p0').classList.add('open');document.body.style.overflow='hidden'">
+        <!-- 1. MigrationOps — NEW FEATURED -->
+        <div class="project-card featured-card" data-modal="modal-sms">
+          <div class="card-top">
+            <span class="card-emoji">☁️</span>
+            <span class="card-type">Cloud PM · Data Analytics · Full-Stack</span>
+          </div>
+          <h3>MigrationOps — Cloud Deprecation Analytics Platform</h3>
+          <p>Full-stack analytics platform simulating an enterprise cloud service deprecation &amp; customer migration program. Covers SQL analytics, KQL telemetry, churn scoring (0–100), migration funnel, and a full PM strategy PRD — built for Azure Data PM roles.</p>
+          <div class="card-tags">
+            <span>PostgreSQL</span><span>KQL</span><span>React</span><span>TypeScript</span><span>Recharts</span>
+          </div>
+          <span class="card-cta">Explore Project →</span>
+        </div>
+
+        <!-- 2. Azure Synapse → Fabric Tracker — NEW FEATURED -->
+        <div class="project-card featured-card" data-modal="modal-fab">
+          <div class="card-top">
+            <span class="card-emoji">🔷</span>
+            <span class="card-type">Azure PM Tool · KQL · SQL · Dashboard</span>
+          </div>
+          <h3>Azure Synapse → Microsoft Fabric Migration Tracker</h3>
+          <p>PM tool for tracking enterprise customer migrations from deprecated Azure Synapse Analytics to Microsoft Fabric. Features KQL-based telemetry identification, SQL urgency segmentation (CRITICAL/HIGH/MEDIUM/LOW), a 6-step deprecation playbook, and a live regional dashboard.</p>
+          <div class="card-tags">
+            <span>KQL</span><span>Azure SQL (T-SQL)</span><span>Chart.js</span><span>HTML/CSS/JS</span><span>GitHub Pages</span>
+          </div>
+          <span class="card-cta">View Dashboard →</span>
+        </div>
+
+        <!-- 3. CleanLabel AI -->
+        <div class="project-card" data-modal="modal-p0">
           <div class="card-top">
             <span class="card-emoji">🌿</span>
             <span class="card-type">AI · Consumer Product · Full-Stack</span>
           </div>
           <h3>CleanLabel AI</h3>
-          <p>Scan any food label photo and instantly get a Glow Score (A–D), red flag additives flagged, and AI-suggested cleaner swaps.</p>
+          <p>Photograph any food label and instantly get a <strong>Glow Score (A–D)</strong> — a PM-designed cleanliness rating that flags harmful additives by name and suggests smarter product swaps powered by Gemini 1.5 Flash. Scan history is persisted per user via Supabase so you can track products over time. Built end-to-end: from product ideation to a live deployed app.</p>
           <div class="card-tags">
-            <span>Gemini AI</span><span>Next.js</span><span>Supabase</span><span>TypeScript</span>
+            <span>Gemini AI</span><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>Framer Motion</span>
           </div>
           <span class="card-cta">Read More →</span>
         </div>
 
-        <div class="project-card" data-modal="modal-p1" onclick="document.getElementById('modal-p1').classList.add('open');document.body.style.overflow='hidden'">
+        <!-- 4. Last 100 Meters -->
+        <div class="project-card" data-modal="modal-p1">
           <div class="card-top">
             <span class="card-emoji">🚚</span>
-            <span class="card-type">Product Strategy · UX Research</span>
+            <span class="card-type">Product Strategy · UX Research · PRD</span>
           </div>
           <h3>The Last 100 Meters</h3>
-          <p>Recovering 1.7M Hours of Annual Fleet Capacity by solving the Manual Stasis loop in hyperlocal delivery.</p>
+          <p>Recovering <strong>1.7M Hours of Annual Fleet Capacity</strong> by solving the Manual Stasis loop in hyperlocal delivery. Full PRD + GTM strategy, RICE/MoSCoW prioritization, and user journey analysis — built as a Swiggy Fleet case study targeting last-mile inefficiency.</p>
           <div class="card-tags">
-            <span>Logistics</span><span>Product Strategy</span><span>UX Research</span>
+            <span>Logistics</span><span>Product Strategy</span><span>UX Research</span><span>PRD</span><span>RICE</span>
           </div>
           <span class="card-cta">Read Case Study →</span>
         </div>
 
-        <div class="project-card" data-modal="modal-p2" onclick="document.getElementById('modal-p2').classList.add('open');document.body.style.overflow='hidden'">
+        <!-- 5. Ola Electric -->
+        <div class="project-card" data-modal="modal-p2">
           <div class="card-top">
             <span class="card-emoji">⚡</span>
-            <span class="card-type">Market Strategy · Retention</span>
+            <span class="card-type">Market Strategy · Retention · NPS</span>
           </div>
           <h3>Ola Electric: Bridging the Service Gap</h3>
-          <p>Solving Service Anxiety through digital diagnostics and post-purchase transparency.</p>
+          <p>Solving <strong>Service Anxiety</strong> through digital diagnostics and post-purchase transparency. Competitive analysis + strategic roadmap targeting NPS recovery — includes a full in-app Vehicle Health Dashboard proposal with real-time diagnostics and service tracking.</p>
           <div class="card-tags">
-            <span>EV Ecosystem</span><span>Market Strategy</span><span>Retention</span>
+            <span>EV Ecosystem</span><span>Market Strategy</span><span>Retention</span><span>NPS Recovery</span>
           </div>
           <span class="card-cta">Read Case Study →</span>
         </div>
 
-        <div class="project-card" data-modal="modal-p3" onclick="document.getElementById('modal-p3').classList.add('open');document.body.style.overflow='hidden'">
+        <!-- 6. ATS Automation -->
+        <div class="project-card" data-modal="modal-p3">
           <div class="card-top">
             <span class="card-emoji">🤖</span>
-            <span class="card-type">LLM · No-Code Automation</span>
+            <span class="card-type">LLM · No-Code Automation · AI Hiring</span>
           </div>
-          <h3>ATS Resume Scoring Automation</h3>
-          <p>Automated first-pass resume screening for Cybersecurity Analyst roles using n8n and LLM.</p>
+          <h3>AI-Driven Talent Acquisition Pipeline</h3>
+          <p>Automated first-pass resume screening for Cybersecurity Analyst roles using <strong>n8n + Gemini API</strong> — reduced screening time by <strong>70%</strong>. Zero-touch pipeline from ingestion to scored shortlist, replacing inconsistent manual review with criteria-based LLM evaluation.</p>
           <div class="card-tags">
-            <span>LLM</span><span>n8n</span><span>Process Design</span>
-          </div>
-          <span class="card-cta">Read More →</span>
-        </div>
-
-        <div class="project-card" data-modal="modal-p4" onclick="document.getElementById('modal-p4').classList.add('open');document.body.style.overflow='hidden'">
-          <div class="card-top">
-            <span class="card-emoji">🛒</span>
-            <span class="card-type">Automation · Operations</span>
-          </div>
-          <h3>Retail Ops: Automating the Order Chaos</h3>
-          <p>Reduced manual workload by 83% for a digital retailer via automated Order-to-Fulfillment pipeline.</p>
-          <div class="card-tags">
-            <span>Zapier</span><span>Google Sheets</span><span>No-Code</span>
-          </div>
-          <span class="card-cta">Read More →</span>
-        </div>
-
-        <div class="project-card" data-modal="modal-p5" onclick="document.getElementById('modal-p5').classList.add('open');document.body.style.overflow='hidden'">
-          <div class="card-top">
-            <span class="card-emoji">👁️</span>
-            <span class="card-type">AI · Computer Vision</span>
-          </div>
-          <h3>Genie — Image Recognition System</h3>
-          <p>Computer Vision + Google Gemini for real-time face recognition and AI speech responses.</p>
-          <div class="card-tags">
-            <span>Google Gemini API</span><span>Python</span><span>Streamlit</span>
+            <span>LLM</span><span>n8n</span><span>Gemini API</span><span>Process Design</span><span>Automation</span>
           </div>
           <span class="card-cta">Read More →</span>
         </div>
@@ -265,10 +253,86 @@
     </div>
   </section>
 
-  <!-- MODALS -->
-  <div class="modal-overlay" id="modal-p0" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+  <!-- ═══ MODALS ═══ -->
+
+  <!-- MODAL: MigrationOps -->
+  <div class="modal-overlay" id="modal-sms">
     <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p0').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <button class="modal-close" data-close="modal-sms">✕</button>
+      <div class="modal-header">
+        <span class="modal-emoji">☁️</span>
+        <p class="modal-type">Cloud PM · Data Analytics · Full-Stack</p>
+        <h2>MigrationOps — Cloud Service Deprecation Analytics Platform</h2>
+      </div>
+      <div class="modal-body">
+        <h4>What This Is</h4>
+        <p>A full-stack analytics platform simulating an enterprise cloud service deprecation and customer migration program — built for Azure Data PM portfolio context. Demonstrates the skill set a PM needs when managing large-scale customer migrations away from a deprecated service.</p>
+        <h4>Four Core Pages</h4>
+        <ul>
+          <li><strong>Main Dashboard</strong> — 8 KPI cards: total users, deprecated-version count, migration rate, high-churn-risk users, and more. Includes 90-day DAU time series, version distribution donut, migration funnel, error rate trends, regional breakdown, and churn risk matrix.</li>
+          <li><strong>User Explorer</strong> — Filterable, paginated table of 2,000 simulated users by version (v1/v2/v3), region (US-East, EU-West, APAC), tier (Enterprise → Free), and churn risk. Exportable as CSV — the exact tool a CSM or PM uses for outreach queues.</li>
+          <li><strong>Telemetry &amp; Events</strong> — ~70,000 API call event log with error detection and latency tracking. Daily active users by version, usage segmentation, and anomaly detection — showing KQL-style telemetry thinking.</li>
+          <li><strong>Migration Strategy &amp; PRD</strong> — Full internal PM doc: P0–P3 priority framework, 4-phase migration timeline, 4-touchpoint comms plan, 7 KPI definitions with formulas, 5 SQL scripts, 5 KQL queries. PDF-exportable.</li>
+        </ul>
+        <h4>PM Skills Demonstrated</h4>
+        <ul>
+          <li>SQL analytics — churn scoring, user segmentation, migration funnel queries</li>
+          <li>KQL / Azure telemetry — DAU trends, error spikes, latency percentiles, version rollout</li>
+          <li>Churn risk composite scoring (0–100) with P0–P3 segment prioritization</li>
+          <li>4-phase migration plan, escalation playbook, and automation roadmap</li>
+        </ul>
+        <div class="modal-tags">
+          <span>PostgreSQL</span><span>KQL</span><span>React</span><span>TypeScript</span><span>Recharts</span><span>TanStack Table</span><span>Node.js</span><span>Migration PRD</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://service-migration-strategy.mn409.replit.app" target="_blank" class="modal-btn-primary">Live Demo ↗</a>
+          <a href="https://github.com/mn409/Service-Migration-Strategy" target="_blank" class="modal-btn-secondary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Azure Synapse → Fabric Tracker -->
+  <div class="modal-overlay" id="modal-fab">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-fab">✕</button>
+      <div class="modal-header">
+        <span class="modal-emoji">🔷</span>
+        <p class="modal-type">Azure PM Tool · KQL · T-SQL · Migration Dashboard</p>
+        <h2>Azure Synapse → Microsoft Fabric Migration Tracker</h2>
+      </div>
+      <div class="modal-body">
+        <h4>What This Is</h4>
+        <p>A PM-built tool for tracking enterprise customer migrations from deprecated Azure Synapse Analytics to Microsoft Fabric. Simulates the exact tooling and decisions needed during a large-scale platform deprecation — covering telemetry-driven customer identification, urgency segmentation, outreach automation, and a live migration dashboard.</p>
+        <h4>Key Features</h4>
+        <ul>
+          <li><strong>Telemetry-Driven Customer Identification</strong> — KQL queries against Azure Monitor / AzureDiagnostics to surface customers actively using deprecated Synapse features and flag at-risk accounts before they churn.</li>
+          <li><strong>SQL Urgency Segmentation</strong> — T-SQL queries segmenting customers into CRITICAL / HIGH / MEDIUM / LOW migration tiers based on dependency depth, usage frequency, and account tier.</li>
+          <li><strong>6-Step Deprecation Playbook</strong> — Detection → Segmentation → Outreach → Migration Support → Validation → Completion, with owner assignments and SLAs at each step.</li>
+          <li><strong>Customer Outreach Queue</strong> — Personalised outreach emails generated from telemetry data, pre-populated with account details and recommended next steps — ready for CSM or PM use.</li>
+          <li><strong>Migration Progress Dashboard</strong> — Live Chart.js charts showing migration status by region and customer tier, tracking progress toward full Synapse deprecation.</li>
+        </ul>
+        <h4>PM Lens</h4>
+        <ul>
+          <li>Shows clear understanding of Azure's deprecation lifecycle and what a Data PM does at Microsoft</li>
+          <li>Combines data signals (telemetry) with product action (outreach, playbook) — not just dashboards</li>
+          <li>SQL + KQL fluency grounded in customer impact, not just technical depth</li>
+        </ul>
+        <div class="modal-tags">
+          <span>KQL</span><span>Azure SQL (T-SQL)</span><span>Chart.js</span><span>HTML/CSS/JS</span><span>GitHub Pages</span><span>Azure Monitor</span><span>Deprecation Playbook</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://mn409.github.io/synapse-migration-tracker" target="_blank" class="modal-btn-primary">Live Demo ↗</a>
+          <a href="https://github.com/mn409/synapse-migration-tracker" target="_blank" class="modal-btn-secondary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: CleanLabel AI -->
+  <div class="modal-overlay" id="modal-p0">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-p0">✕</button>
       <div class="modal-header">
         <span class="modal-emoji">🌿</span>
         <p class="modal-type">AI · Consumer Product · Full-Stack</p>
@@ -296,9 +360,10 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="modal-p1" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+  <!-- MODAL: Last 100 Meters -->
+  <div class="modal-overlay" id="modal-p1">
     <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p1').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <button class="modal-close" data-close="modal-p1">✕</button>
       <div class="modal-header">
         <span class="modal-emoji">🚚</span>
         <p class="modal-type">Logistics · Product Strategy · UX Research</p>
@@ -328,9 +393,10 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="modal-p2" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+  <!-- MODAL: Ola Electric -->
+  <div class="modal-overlay" id="modal-p2">
     <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p2').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <button class="modal-close" data-close="modal-p2">✕</button>
       <div class="modal-header">
         <span class="modal-emoji">⚡</span>
         <p class="modal-type">EV Ecosystem · Market Strategy · Retention</p>
@@ -359,9 +425,10 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="modal-p3" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+  <!-- MODAL: ATS -->
+  <div class="modal-overlay" id="modal-p3">
     <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p3').classList.remove('open');document.body.style.overflow=''">✕</button>
+      <button class="modal-close" data-close="modal-p3">✕</button>
       <div class="modal-header">
         <span class="modal-emoji">🤖</span>
         <p class="modal-type">LLM · No-Code Automation · Process Design</p>
@@ -374,74 +441,15 @@
         <p>A fully automated low-code workflow using n8n that ingests resumes, parses them using an LLM, scores against a defined criteria set, and centralizes results for recruiter review.</p>
         <h4>Outcomes</h4>
         <ul>
-          <li>Reduced manual screening time significantly for first-pass evaluation</li>
+          <li>Reduced manual screening time by <strong>70%</strong> for first-pass evaluation</li>
           <li>Consistent, criteria-based scoring replacing subjective judgment on initial pass</li>
           <li>Fully automated pipeline with zero manual intervention once set up</li>
         </ul>
         <div class="modal-tags">
-          <span>LLM</span><span>n8n</span><span>No-Code Automation</span><span>Process Design</span>
+          <span>LLM</span><span>n8n</span><span>Gemini API</span><span>No-Code Automation</span><span>Process Design</span>
         </div>
         <div class="modal-actions">
           <a href="https://github.com/mn409/ats-resume-scoring-n8n" target="_blank" class="modal-btn-primary">View on GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="modal-p4" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
-    <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p4').classList.remove('open');document.body.style.overflow=''">✕</button>
-      <div class="modal-header">
-        <span class="modal-emoji">🛒</span>
-        <p class="modal-type">No-Code Automation · Operations · Process Design</p>
-        <h2>Retail Ops: Automating the Order Chaos Loop</h2>
-      </div>
-      <div class="modal-body">
-        <h4>Problem Statement</h4>
-        <p>A digital retailer was drowning in manual tasks across their Order-to-Fulfillment pipeline — updating sheets, sending notifications, tracking statuses — consuming hours daily.</p>
-        <h4>What I Built</h4>
-        <p>An automated Order-to-Fulfillment pipeline using Zapier and Google Sheets that handles order intake, status updates, team notifications, and fulfillment tracking with zero manual touchpoints.</p>
-        <h4>Outcomes</h4>
-        <ul>
-          <li><strong>83% reduction</strong> in manual administrative workload</li>
-          <li>Error rate dropped as human data-entry was eliminated from routine steps</li>
-          <li>Team could focus on exceptions instead of routine processing</li>
-        </ul>
-        <div class="modal-tags">
-          <span>Zapier</span><span>Google Sheets</span><span>No-Code</span><span>Operations</span>
-        </div>
-        <div class="modal-actions">
-          <a href="https://drive.google.com/file/d/1Ge0hPR0_xbzIWiG3On8FNxCoVDC2s54n/view" target="_blank" class="modal-btn-primary">View Case Study ↗</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="modal-p5" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
-    <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-p5').classList.remove('open');document.body.style.overflow=''">✕</button>
-      <div class="modal-header">
-        <span class="modal-emoji">👁️</span>
-        <p class="modal-type">AI · Computer Vision · Python</p>
-        <h2>Genie — Image Recognition System</h2>
-      </div>
-      <div class="modal-body">
-        <h4>What It Does</h4>
-        <p>A college project leveraging Computer Vision and the Google Gemini API to recognize faces in real-time and generate AI-powered speech responses.</p>
-        <h4>Tech Stack</h4>
-        <ul>
-          <li><strong>Google Gemini API</strong> for multimodal AI image understanding and response generation</li>
-          <li><strong>Python</strong> for core processing and pipeline logic</li>
-          <li><strong>Streamlit</strong> for the web interface and demo</li>
-          <li><strong>Image Processing</strong> for real-time frame capture and recognition</li>
-        </ul>
-        <h4>What I Learned</h4>
-        <p>This project deepened my understanding of multimodal AI, API integration, and building usable interfaces rapidly with Streamlit.</p>
-        <div class="modal-tags">
-          <span>Google Gemini API</span><span>Image Recognition</span><span>Python</span><span>Streamlit</span>
-        </div>
-        <div class="modal-actions">
-          <a href="https://github.com/mn409/genie" target="_blank" class="modal-btn-primary">View on GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -453,7 +461,6 @@
       <p class="section-label">Achievements</p>
       <h2 class="section-title">Leadership &amp; recognition</h2>
       <div class="achievements-grid">
-
         <div class="achievement-card featured-achievement">
           <span class="ach-icon">🏆</span>
           <h3>Best Outgoing Student Award</h3>
@@ -463,7 +470,6 @@
             <a href="https://www.linkedin.com/posts/mokshith-narayan-a4b872255_gratitude-achievement-bestoutgoingstudent-activity-7204078536595304448-0Fw9/" target="_blank" class="ach-link">View on LinkedIn ↗</a>
           </div>
         </div>
-
         <div class="achievement-card">
           <span class="ach-icon">🎪</span>
           <h3>Head of Event &amp; Operations</h3>
@@ -473,7 +479,6 @@
             <a href="https://www.linkedin.com/posts/mokshith-narayan-a4b872255_inspire23-collegefest-teamwork-activity-7126562116215476225-rM7M" target="_blank" class="ach-link">View on LinkedIn ↗</a>
           </div>
         </div>
-
         <div class="achievement-card">
           <span class="ach-icon">🧩</span>
           <h3>Quiz Master — Cross-College Competition</h3>
@@ -483,7 +488,6 @@
             <a href="https://www.linkedin.com/posts/mokshith-narayan-a4b872255_quizmaster-astrobrains-eventmanagement-activity-7175330209364152322-Hzzl/" target="_blank" class="ach-link">View on LinkedIn ↗</a>
           </div>
         </div>
-
         <div class="achievement-card">
           <span class="ach-icon">🎓</span>
           <h3>Google Project Management Certificate</h3>
@@ -493,7 +497,6 @@
             <a href="https://www.coursera.org/account/accomplishments/specialization/1PLAS0ELFW8V" target="_blank" class="ach-link">View Certificate ↗</a>
           </div>
         </div>
-
         <div class="achievement-card">
           <span class="ach-icon">💼</span>
           <h3>Accenture North America PM Simulation</h3>
@@ -503,7 +506,6 @@
             <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/tHFz7Bfjmh35DXQv6_T6kdcdKSTfg2aotxT_ZiwPgokYZtdoyAq9J_1730110516896_completion_certificate.pdf" target="_blank" class="ach-link">View Certificate ↗</a>
           </div>
         </div>
-
         <div class="achievement-card">
           <span class="ach-icon">🗣️</span>
           <h3>College Representative — Quiz &amp; Debate</h3>
@@ -513,7 +515,6 @@
             <a href="https://www.linkedin.com/posts/mokshith-narayan-a4b872255_teamwork-multitalented-proudsdmcollege-activity-7083303719672426496-dHkb/" target="_blank" class="ach-link">View on LinkedIn ↗</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -539,16 +540,16 @@
           <div class="skill-tags">
             <span>n8n</span><span>Zapier</span><span>Trello</span><span>Jira</span>
             <span>Confluence</span><span>Notion</span><span>Advanced Google Sheets</span>
-            <span>SQL</span><span>Data Visualization</span>
+            <span>SQL</span><span>KQL (Kusto)</span><span>Data Visualization</span>
             <span>Prompt Engineering</span><span>Gemini API</span><span>GPT API Integration</span>
           </div>
         </div>
         <div class="skill-group">
           <h3>💻 Technical Foundation</h3>
           <div class="skill-tags">
-            <span>Python</span><span>SQL (MySQL)</span><span>Java</span>
-            <span>Linux</span><span>Azure</span><span>Cloud Infrastructure</span>
-            <span>API Documentation</span><span>Image Processing</span>
+            <span>Python</span><span>SQL (MySQL / T-SQL)</span><span>Java</span>
+            <span>Linux</span><span>Azure</span><span>Microsoft Fabric</span>
+            <span>Cloud Infrastructure</span><span>API Documentation</span>
             <span>Streamlit</span><span>CA Workload Automation</span>
           </div>
         </div>
@@ -562,7 +563,6 @@
       <p class="section-label">Contact</p>
       <h2 class="section-title">Let's build something together.</h2>
       <p class="contact-sub">Currently looking for opportunities in product and AI-based roles. Open to conversations about exciting roles, collaborations, or just trading notes on PM craft.</p>
-
       <div class="contact-links">
         <a href="#" onclick="window.location='mai'+'lto:mokshithnarayan09@gma'+'il.com';return false;" class="contact-link">
           <span class="cl-icon">✉️</span>
@@ -581,7 +581,6 @@
           <div><strong>Resume</strong><p>Download PDF</p></div>
         </a>
       </div>
-
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/xnjbzywg" method="POST">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your Name" required/>
@@ -609,118 +608,6 @@
     </div>
   </footer>
 
-  <!-- ALL JS INLINE — guaranteed to work regardless of caching -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // NAV
-    const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
-    const sections = document.querySelectorAll('section[id]');
-
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 20);
-      let current = '';
-      sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
-      });
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
-      });
-    });
-
-    // HAMBURGER
-    const hamburger = document.getElementById('hamburger');
-    const navLinksEl = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => navLinksEl.classList.toggle('open'));
-    navLinksEl.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinksEl.classList.remove('open'));
-    });
-
-    // MODALS — inline so nothing can block them
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.addEventListener('click', function() {
-        var modalId = this.getAttribute('data-modal');
-        var modal = document.getElementById(modalId);
-        if (modal) {
-          modal.classList.add('open');
-          document.body.style.overflow = 'hidden';
-        }
-      });
-    });
-
-    document.querySelectorAll('.modal-close').forEach(btn => {
-      btn.addEventListener('click', function() {
-        var modal = document.getElementById(this.getAttribute('data-close'));
-        if (modal) {
-          modal.classList.remove('open');
-          document.body.style.overflow = '';
-        }
-      });
-    });
-
-    document.querySelectorAll('.modal-overlay').forEach(overlay => {
-      overlay.addEventListener('click', function(e) {
-        if (e.target === this) {
-          this.classList.remove('open');
-          document.body.style.overflow = '';
-        }
-      });
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
-        document.body.style.overflow = '';
-      }
-    });
-
-    // SCROLL ANIMATIONS
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          var delay = parseInt(entry.target.dataset.delay) || 0;
-          setTimeout(() => entry.target.classList.add('visible'), delay);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
-
-    document.querySelectorAll('.project-card').forEach((el, i) => { el.dataset.delay = i * 80; observer.observe(el); });
-    document.querySelectorAll('.achievement-card').forEach((el, i) => { el.dataset.delay = i * 80; observer.observe(el); });
-    document.querySelectorAll('.timeline-item').forEach((el, i) => { el.dataset.delay = i * 100; observer.observe(el); });
-    document.querySelectorAll('.skill-group').forEach((el, i) => { el.dataset.delay = i * 100; observer.observe(el); });
-
-    // CONTACT FORM
-    const form = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    const submitBtn = document.getElementById('submit-btn');
-    if (form) {
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        formStatus.textContent = '';
-        try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          });
-          if (response.ok) {
-            formStatus.textContent = 'Message sent! I will get back to you soon.';
-            formStatus.style.color = '#15803d';
-            form.reset();
-          } else { throw new Error('error'); }
-        } catch(err) {
-          formStatus.textContent = 'Something went wrong. Email me at mokshithnarayan09@gmail.com';
-          formStatus.style.color = '#b91c1c';
-        }
-        submitBtn.textContent = 'Send Message →';
-        submitBtn.disabled = false;
-      });
-    }
-
-    // SMOOTH SCROLL
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        var target = document.querySelector(this.ge
+  <script src="script.js"></script>
+</body>
+</html>
